@@ -1,0 +1,34 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron text-center">
+    <h1>Registro de personas</h1>
+    <p class="lead">En esta Aplicación podras registrar y listar datos de personas.</p>
+
+    <div id="login">
+        <div class="container">
+            <div id="login-row" class="row text-center">
+                <div id="login-column" class="col-md-12">
+                    <div id="login-box" class="col-md-12">
+                        <form id="login-form" class="form text-center" action="" method="post">
+                            <h3 class="text-center text-info">Login</h3>
+                            <div class="form-group">
+                                <label for="usuario" class="text-info">Usuario</label><br>
+                                <input type="text" name="usuario" id="usuario" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="clave" class="text-info">Contraseña</label><br>
+                                <input type="password" name="clave" id="clave" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" id="BtnIngresar" name="submit" class="btn btn-warning btn-md" value="Enviar">                                
+                            </div>                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

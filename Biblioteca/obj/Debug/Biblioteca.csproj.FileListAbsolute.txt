@@ -1,0 +1,6 @@
+E:\C#\trabajoFinal\Biblioteca\bin\Debug\Biblioteca.dll
+E:\C#\trabajoFinal\Biblioteca\bin\Debug\Biblioteca.pdb
+E:\C#\trabajoFinal\Biblioteca\obj\Debug\Biblioteca.csproj.AssemblyReference.cache
+E:\C#\trabajoFinal\Biblioteca\obj\Debug\Biblioteca.csproj.CoreCompileInputs.cache
+E:\C#\trabajoFinal\Biblioteca\obj\Debug\Biblioteca.dll
+E:\C#\trabajoFinal\Biblioteca\obj\Debug\Biblioteca.pdb

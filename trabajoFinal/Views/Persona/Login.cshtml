@@ -1,0 +1,51 @@
+﻿@model trabajoFinal.Models.BD
+
+@{
+    ViewBag.Title = "Login";
+}
+
+<h2>Login</h2>
+
+
+
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+    <div class="container ">
+        <div id="login">
+            <div class="container">
+                <div id="login-row" class="row text-center">
+                    <div id="login-column" class="col-md-12">
+                        <div id="login-box" class="col-md-12">
+                            <form id="login-form" class="form text-center" action="" method="post">
+                                <h3 class="text-center text-info">Login</h3>
+                                <div class="form-group">
+
+                                    @Html.EditorFor(model => model.usuario, new { htmlAttributes = new { @class = "form-control", @placeholder = "Usuario", id = "usuario", @required = true } })
+                                    @Html.ValidationMessageFor(model => model.usuario, "", new { @class = "text-danger" })
+                                </div>
+                                <div class="form-group">
+
+                                    @Html.EditorFor(model => model.password, new { htmlAttributes = new { @class = "form-control", @type = "password", @placeholder = "Contraseña", id = "clave", @required = true } })
+                                    @Html.ValidationMessageFor(model => model.password, "", new { @class = "text-danger" })
+                                </div>
+                                <div class="form-group">
+                                    <input type="submit" id="BtnIngresar" name="submit" class="btn btn-warning btn-md" value="Ingresar">
+                                </div>
+                            </form>
+                            <p>
+                                @Html.ActionLink("Registrarse", "Registrarse")
+                            </p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>        
+   
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
